@@ -4,9 +4,9 @@
       <text class="lottery-page__title">体彩开奖</text>
     </view>
 
-    <scroll-view scroll-y class="lottery-page__list" :show-scrollbar="false">
+    <view class="lottery-page__list">
       <LotteryResultCard v-for="item in lotteryResults" :key="item.id" :item="item" />
-    </scroll-view>
+    </view>
   </view>
 </template>
 
