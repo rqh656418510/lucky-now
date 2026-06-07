@@ -1,0 +1,8 @@
+dist/
+node_modules/
+.swc/
+.temp/
+.rn_temp/
+deploy_versions/
+components.d.ts
+package-lock.json

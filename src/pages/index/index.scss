@@ -1,0 +1,143 @@
+.lottery-page {
+  min-height: 100vh;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    padding: calc(env(safe-area-inset-top) + 12px) 0 14px;
+    background: #e72516;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2;
+  }
+
+  &__list {
+    flex: 1;
+    height: calc(100vh - 80px);
+    padding: 12px;
+    box-sizing: border-box;
+  }
+}
+
+.lottery-card {
+  margin-bottom: 12px;
+  padding: 14px 14px 12px;
+  border-radius: 8px;
+  background: #fff;
+
+  &__head {
+    margin-bottom: 14px;
+  }
+
+  &__title-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.2;
+  }
+
+  &__issue,
+  &__date {
+    font-size: 12px;
+    color: #999;
+    line-height: 1.2;
+  }
+
+  &__balls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  &__ball {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  &__ball-text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &__ball--blue {
+    background: linear-gradient(180deg, #6eb0ff 0%, #4a94f5 100%);
+
+    .lottery-card__ball-text {
+      color: #fff;
+    }
+  }
+
+  &__ball--gold {
+    background: linear-gradient(180deg, #ffe27a 0%, #f5c542 100%);
+
+    .lottery-card__ball-text {
+      color: #333;
+    }
+  }
+
+  &__ball--purple {
+    background: linear-gradient(180deg, #b5a8ef 0%, #9588e0 100%);
+
+    .lottery-card__ball-text {
+      color: #fff;
+    }
+  }
+
+  &__ball--orange {
+    background: linear-gradient(180deg, #ffb86a 0%, #ff9f4a 100%);
+
+    .lottery-card__ball-text {
+      color: #fff;
+    }
+  }
+
+  &__jackpot {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #e72516;
+    line-height: 1.4;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__action {
+    padding: 6px 12px;
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.2;
+    background: #fff;
+  }
+}

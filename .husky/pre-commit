@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+# 提交前：Prettier 格式化 + ESLint 自动修复（仅暂存文件）
+npx lint-staged
